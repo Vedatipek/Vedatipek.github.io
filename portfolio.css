@@ -1,0 +1,205 @@
+/* Genel ayarlar */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fbfc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Başlıklar ve header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #007acc;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #005f99;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #005f99;
+  padding-bottom: 8px;
+  max-width: max-content;
+}
+
+/* Navigasyon */
+nav {
+  background-color: #e3f2fd;
+  padding: 12px 0;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #004a80;
+  border-bottom: 3px solid #004a80;
+  outline: none;
+}
+
+/* Sayfa bölümleri */
+section {
+  margin-bottom: 60px;
+}
+
+/* About bölümü galeri */
+.gallery-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.gallery-text .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.gallery-text .item:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-text .item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-text .item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-text .item p {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* CV butonu */
+.cv-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #1e7e34;
+}
+
+/* Video alanı */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* İletişim formu stilleri */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e3f2fd;
+  color: #007acc;
+  font-weight: 600;
+  border-top: 1px solid #c3d5e9;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .gallery-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-text .item {
+    width: 90%;
+  }
+}
